@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #############
-# The NU General Public License version 3.0 (GPLv3)
+# The GNU General Public License version 3.0 (GPLv3)
 #
 # Copyright (c) 2020 Hui-Su Kim
 #
