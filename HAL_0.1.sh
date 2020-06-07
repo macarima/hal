@@ -147,7 +147,7 @@ if [ "$assemble_stage" == "D1" ] && [ "$ecc_stage" == "ONT" ];then
 
 			fi
 
-			python3 ragoo.py -t ${cpu} -C ${orig_genome}.wtdbg2_racon1x_medaka.fa ${orig_ref}
+			ragoo.py -t ${cpu} -C ${orig_genome}.wtdbg2_racon1x_medaka.fa ${orig_ref}
 
 elif [ "$assemble_stage" == "D2" ] && [ "$ecc_stage" == "ONT" ];then
 
@@ -171,7 +171,7 @@ elif [ "$assemble_stage" == "D2" ] && [ "$ecc_stage" == "ONT" ];then
 
 			fi
 
-			python3 ragoo.py -t ${cpu} -C ${orig_genome}.wtdbg2_racon1x_medaka.fa ${orig_ref}
+			ragoo.py -t ${cpu} -C ${orig_genome}.wtdbg2_racon1x_medaka.fa ${orig_ref}
 
 elif [ "$assemble_stage" == "D1" ] && [ "$ecc_stage" == "PBCCS" ];then
 
@@ -183,7 +183,7 @@ elif [ "$assemble_stage" == "D1" ] && [ "$ecc_stage" == "PBCCS" ];then
 			minimap2 -t ${cpu} -x asm20  ${orig_genome}.ctg.lay.fa ${orig_fastq} > ${orig_genome}.mapping_minimap21x.paf
 			racon -t ${cpu} -m 8 -x -6 -g -8 -w 500 ${orig_fastq} ${orig_genome}.mapping_minimap21x.paf ${orig_genome}.ctg.lay.fa > ${orig_genome}.wtdbg2_racon1x.fa
 
-			python3 ragoo.py -t ${cpu} -C ${orig_genome}.wtdbg2_racon1x_medaka.fa ${orig_ref}
+			ragoo.py -t ${cpu} -C ${orig_genome}.wtdbg2_racon1x.fa ${orig_ref}
 
 else
 
@@ -195,7 +195,7 @@ else
 			minimap2 -t ${cpu} -x asm20  ${orig_genome}.ctg.lay.fa ${orig_fastq} > ${orig_genome}.mapping_minimap21x.paf
 			racon -t ${cpu} -m 8 -x -6 -g -8 -w 500 ${orig_fastq} ${orig_genome}.mapping_minimap21x.paf ${orig_genome}.ctg.lay.fa > ${orig_genome}.wtdbg2_racon1x.fa
 
-			python3 ragoo.py -t ${cpu} -C ${orig_genome}.wtdbg2_racon1x_medaka.fa ${orig_ref}
+			ragoo.py -t ${cpu} -C ${orig_genome}.wtdbg2_racon1x.fa ${orig_ref}
 
 fi
 
