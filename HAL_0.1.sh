@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #############
-# The Mozilla Public License 2.0 (MPL 2)
+# The GNU General Public License version 3.0 (GPLv3)
 #
 # Copyright (c) 2020 Hui-Su Kim
 #
