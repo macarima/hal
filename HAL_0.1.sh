@@ -148,6 +148,9 @@ if [ "$assemble_stage" == "D1" ] && [ "$ecc_stage" == "ONT" ];then
 			fi
 
 			ragoo.py -t ${cpu} -C ${orig_genome}.wtdbg2_racon1x_medaka.fa ${orig_ref}
+			cp ragoo_output/ragoo.fasta ${orig_genome}.wtdbg2_racon1x_medaka.chr.fa
+
+			echo "############### Assembly job is done. ###############"
 
 elif [ "$assemble_stage" == "D2" ] && [ "$ecc_stage" == "ONT" ];then
 
@@ -172,6 +175,9 @@ elif [ "$assemble_stage" == "D2" ] && [ "$ecc_stage" == "ONT" ];then
 			fi
 
 			ragoo.py -t ${cpu} -C ${orig_genome}.wtdbg2_racon1x_medaka.fa ${orig_ref}
+			cp ragoo_output/ragoo.fasta ${orig_genome}.wtdbg2_racon1x_medaka.chr.fa
+
+			echo "############### Assembly job is done. ###############"
 
 elif [ "$assemble_stage" == "D1" ] && [ "$ecc_stage" == "PBCCS" ];then
 
@@ -184,6 +190,9 @@ elif [ "$assemble_stage" == "D1" ] && [ "$ecc_stage" == "PBCCS" ];then
 			racon -t ${cpu} -m 8 -x -6 -g -8 -w 500 ${orig_fastq} ${orig_genome}.mapping_minimap21x.paf ${orig_genome}.ctg.lay.fa > ${orig_genome}.wtdbg2_racon1x.fa
 
 			ragoo.py -t ${cpu} -C ${orig_genome}.wtdbg2_racon1x.fa ${orig_ref}
+			cp ragoo_output/ragoo.fasta ${orig_genome}.wtdbg2_racon1x.chr.fa
+
+			echo "############### Assembly job is done. ###############"
 
 else
 
@@ -196,6 +205,9 @@ else
 			racon -t ${cpu} -m 8 -x -6 -g -8 -w 500 ${orig_fastq} ${orig_genome}.mapping_minimap21x.paf ${orig_genome}.ctg.lay.fa > ${orig_genome}.wtdbg2_racon1x.fa
 
 			ragoo.py -t ${cpu} -C ${orig_genome}.wtdbg2_racon1x.fa ${orig_ref}
+			cp ragoo_output/ragoo.fasta ${orig_genome}.wtdbg2_racon1x.chr.fa
+
+			echo "############### Assembly job is done. ###############"
 
 fi
 
