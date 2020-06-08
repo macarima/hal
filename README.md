@@ -2,9 +2,10 @@
 HAL_assembly uses wtdbg2, racon, medaka, and RaGOO.
 
 ## Installation
-Prerequisties: wtdbg2, racon, medaka, RaGOO  
+Prerequisties: wtdbg2, racon, medaka, RaGOO
+These programs must exist on your path.
 
-No need to installation. Just execute 'HAL_0.1.sh or HAL_0.1 binary'
+No need to installation. Just execute 'HAL_0.1.sh or HAL_0.1 binary' on your linux machine.
 
 ## Usage
 ```
@@ -29,7 +30,7 @@ OPTIONS:
 -c|--cpu	Specify number of threads for processing assembly (Default: 1)
 -s|--seq_type	Type of long read sequencer. ONT / PacBio Hifi-CCS or Corrected PacBio reads (Default: ONT)
 -g|--gpu	GPU usage for Medaka. Specify number of GPU or X (Default: X)
--m|--medaka_model
+-m|--medaka_model (Default: r941_prom_high_g303)
 -h|--help	Shows this help page.
 *****************************************************
 ```
