@@ -39,7 +39,7 @@ OPTIONS:
 On working directory, you can find the final result with extention of '~.chr.fa'.
 
 ## Contact
-For question, bugs and issues, please post on issue page of Github.
+For questions, bugs and issues, please post on issue page of Github.
 
 ## Citation
 This page: https://github.com/macarima/hal
