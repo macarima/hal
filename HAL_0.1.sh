@@ -84,7 +84,7 @@ while :; do
 				shift
 		;;
 		-c|--cpu) OPTARG=$2
-						re='^[0-9]+$'
+						re='^[0-9]*$'
 						if [[ $OPTARG =~ $re ]]; then
 								echo " $OPTARG of cpu will be used for HAL pipeline."
 								cpu=$OPTARG
