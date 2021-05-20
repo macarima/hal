@@ -1,4 +1,4 @@
-# HAL_assembly pipeline: *De novo* assembly pipeline for the low-depth sequencing of human genome
+# HAL_assembly pipeline: *De novo* assembly pipeline for a low-depth sequencing of human genome
 HAL_assembly uses wtdbg2, racon, medaka, and RaGOO.
 
 ## Installation
