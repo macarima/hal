@@ -47,5 +47,5 @@ This page: https://github.com/macarima/hal
 ## Copyright
 HAL_assembly is freely available for academic use. It is provided without warranty of any kind, including but not limited to the warranties of merchantability, fitness for a particular purpose and non-infringement. No liability for the software usage is assumed. Redistribution is allowed. Redistribution of modified version is not allowed. 
 
-For commercial use, please contact me.
+For commercial use, please contact me.  
 macarima@gmail.com / hskim3824@gmail.com
