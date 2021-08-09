@@ -2,10 +2,10 @@
 HAL_assembly uses wtdbg2, racon, medaka, and RaGOO.
 
 ## Installation
-Prerequisties: wtdbg2, racon, medaka, RaGOO  
+Prerequisties: wtdbg2, racon, medaka, RagTag  
 These programs must exist on your path.
 
-No need to installation. Just execute 'HAL_0.1.sh or HAL_0.1 binary' on your linux machine.
+No need to installation. Just execute 'HAL_0.2.sh' on your linux machine.
 
 ## Usage
 ```
