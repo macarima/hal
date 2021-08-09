@@ -147,8 +147,8 @@ if [ "$assemble_stage" == "D1" ] && [ "$ecc_stage" == "ONT" ];then
 
 			fi
 
-			ragoo.py -t ${cpu} -C ${orig_genome}.wtdbg2_racon1x_medaka.fa ${orig_ref}
-			cp ragoo_output/ragoo.fasta ${orig_genome}.wtdbg2_racon1x_medaka.chr.fa
+			ragtag.py -t ${cpu} -C ${orig_genome}.wtdbg2_racon1x_medaka.fa ${orig_ref}
+			cp ragtag_output/ragtag.scaffold.fasta ${orig_genome}.wtdbg2_racon1x_medaka.chr.fa
 
 			echo "############### Assembly job is done. ###############"
 
@@ -174,8 +174,8 @@ elif [ "$assemble_stage" == "D2" ] && [ "$ecc_stage" == "ONT" ];then
 
 			fi
 
-			ragoo.py -t ${cpu} -C ${orig_genome}.wtdbg2_racon1x_medaka.fa ${orig_ref}
-			cp ragoo_output/ragoo.fasta ${orig_genome}.wtdbg2_racon1x_medaka.chr.fa
+			ragtag.py -t ${cpu} -C ${orig_genome}.wtdbg2_racon1x_medaka.fa ${orig_ref}
+			cp ragtag_output/ragtag.scaffold.fasta ${orig_genome}.wtdbg2_racon1x_medaka.chr.fa
 
 			echo "############### Assembly job is done. ###############"
 
@@ -189,8 +189,8 @@ elif [ "$assemble_stage" == "D1" ] && [ "$ecc_stage" == "PBCCS" ];then
 			minimap2 -t ${cpu} -x asm20  ${orig_genome}.ctg.lay.fa ${orig_fastq} > ${orig_genome}.mapping_minimap21x.paf
 			racon -t ${cpu} -m 8 -x -6 -g -8 -w 500 ${orig_fastq} ${orig_genome}.mapping_minimap21x.paf ${orig_genome}.ctg.lay.fa > ${orig_genome}.wtdbg2_racon1x.fa
 
-			ragoo.py -t ${cpu} -C ${orig_genome}.wtdbg2_racon1x.fa ${orig_ref}
-			cp ragoo_output/ragoo.fasta ${orig_genome}.wtdbg2_racon1x.chr.fa
+			ragtag.py -t ${cpu} -C ${orig_genome}.wtdbg2_racon1x.fa ${orig_ref}
+			cp ragtag_output/ragtag.scaffold.fasta ${orig_genome}.wtdbg2_racon1x.chr.fa
 
 			echo "############### Assembly job is done. ###############"
 
@@ -204,8 +204,8 @@ else
 			minimap2 -t ${cpu} -x asm20  ${orig_genome}.ctg.lay.fa ${orig_fastq} > ${orig_genome}.mapping_minimap21x.paf
 			racon -t ${cpu} -m 8 -x -6 -g -8 -w 500 ${orig_fastq} ${orig_genome}.mapping_minimap21x.paf ${orig_genome}.ctg.lay.fa > ${orig_genome}.wtdbg2_racon1x.fa
 
-			ragoo.py -t ${cpu} -C ${orig_genome}.wtdbg2_racon1x.fa ${orig_ref}
-			cp ragoo_output/ragoo.fasta ${orig_genome}.wtdbg2_racon1x.chr.fa
+			ragtag.py -t ${cpu} -C ${orig_genome}.wtdbg2_racon1x.fa ${orig_ref}
+			cp ragtag_output/ragtag.scaffold.fasta ${orig_genome}.wtdbg2_racon1x.chr.fa
 
 			echo "############### Assembly job is done. ###############"
 
