@@ -12,7 +12,7 @@ No need to installation. Just execute 'HAL_0.2.sh' on your linux machine.
 *****************************************************
 HAL de novo assembly pipeline
 
-USAGE: ./hal_0.1 [options] <path_to_input_reads> <name_of_genome> <name_of_reference_genome>
+USAGE: ./hal_0.2 [options] <path_to_input_reads> <name_of_genome> <name_of_reference_genome>
 
 DESCRIPTION:
 This is a script to assemble draft genome as choromsome level with a reference genome
