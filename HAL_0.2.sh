@@ -10,7 +10,7 @@
 # HAL de novo assembly pipeline
 #
 
-version=20200607
+version=20210809
 
 echo `readlink -f $0`" "$*
 
@@ -20,7 +20,7 @@ USAGE_short="
 *****************************************************
 HAL de novo assembly pipeline
 
-USAGE: ./hal_0.1 [options] <path_to_input_reads> <name_of_genome> <name_of_reference_genome>
+USAGE: ./hal_0.2.sh [options] <path_to_input_reads> <name_of_genome> <name_of_reference_genome>
 
 DESCRIPTION:
 This is a script to assemble draft genome with a chromosome-level
